@@ -1,150 +1,288 @@
-body,
-html {
-	padding: 0;
-	margin: 0;
+/******通用版（支持html5）********/
+
+html,
+body {
 	background-color: #f3f3f3;
-	font-family: "微软雅黑"
+	font-family: '\5FAE\8F6F\96C5\9ED1';
 }
 
-h3 {
-	font-weight: 100;
-}
-
-h2 {
-	color: #585f69;
-	font-size: 20px;
-	font-weight: 100;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	margin: 0;
-	padding: 0;
+	padding: 0
 }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+caption,
+th {
+	text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+
+q:before,
+q:after {
+	content: ''
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal
+}
+
+sup {
+	vertical-align: text-top
+}
+
+sub {
+	vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit
+}
+
+input,
+textarea,
+select {
+	*font-size: 100%
+}
+
+
+/******网页代码***********/
 
 #head {
 	width: 100%;
 	height: 70px;
-	float: left;
+	z-index: 1;
+	background-color: white;
 	position: fixed;
-	background-color: #ffffff;
 	border-bottom: 1px solid #e7e7e7;
 }
 
 #head .my {
 	float: left;
+	width: 100px;
+	height: 70px;
 }
 
-#head .my .img,
-#head .my .img img {
-	position: relative;
-	width: 50px;
-	height: 50px;
+#head .my div {
 	float: left;
-	border-radius: 100px;
-}
-
-#head .my .img img {
+	position: relative;
+	left: 15px;
 	top: 10px;
-	left: 10px;
 }
 
 #head .my .name {
-	position: relative;
-	float: left;
-	left: 20px;
-}
-
-#head .classification .list .blog h3 {
-	color: #f60;
+	left: 25px;
+	top: 20px;
 }
 
 #head .classification {
-	float: right;
 	position: relative;
-	right: 10px;
+	float: right;
+	right: 20px;
 }
 
 #head .classification .list {
 	float: left;
-	margin: 0 10px
+	margin: 20px 20px;
 }
 
 #left {
-	border: 1px solid #e7e7e7;
 	position: fixed;
+	width: 17%;
+	height: 100%;
 	background-color: white;
-	width: 15%;
-	height: 800px;
 	top: 100px;
 	left: 15px;
 }
 
 #left .head {
-	text-align: center;
-	border-bottom: 1px solid #e7e7e7;
+	width: 100%;
+	height: 60px;
+	position: relative;
+	border-bottom: 1px solid #E7E7E7;
+}
+
+#left .head h3 {
+	position: relative;
+	top: 18px;
+	left: 20px;
 }
 
 #left .text-list {
-	position: relative;
-	left: 20px;
-	top: 10px;
+	top: 20px;
 	width: 100%;
 	height: 50px;
-}
-
-#left .text-list .img img {
 	position: relative;
-	top: 12px;
-	width: 25px;
-	height: 25px;
+	background-color: #fff5ee;
+	border-bottom: 1px solid #f8d4bc;
+	border-top: 1px solid #f8d4bc;
 }
 
-#left .text-list h3 {
+#left .text-list div {
 	position: relative;
-	top: 12px;
-	left: 10px;
-	margin: 0;
-	padding: 0;
-}
-
-#left .text-list .img,
-#left .text-list .text {
+	left: 30px;
+	top: 15px;
 	float: left;
 }
 
+#left .text-list div:nth-child(2) {
+	left: 35px;
+}
+
 #body {
-	border: 1px solid #e7e7e7;
-	position: fixed;
-	background-color: white;
-	width: 65%;
+	left: 19%;
 	top: 100px;
-	left: 17%;
+	height: 100%;
+	width: 65%;
+	background-color: white;
+	position: absolute;
 }
 
 #body .head {
 	width: 100%;
-	height: 46px;
+	height: 60px;
 	border-bottom: 1px solid #E7E7E7;
 }
 
-#body .head .date h3 {
+#body .head h3 {
 	position: relative;
 	left: 20px;
-	font-size: 16px;
+	top: 18px;
 }
-#body .list h3{
-	color: #777;
-	font-size: 15px;
+
+#body .list {
+	width: 100%;
+	height: 134px;
+	padding-left: 15px;
+	border-bottom: 1px dashed #E7E7E7;
 }
-#body .list .classification{
+
+#body .list div {
+	position: relative;
+	top: 20px;
+}
+
+#body .list .title h2 {
+	font-size: 20px;
+	color: #5f5f5f;
+}
+
+#body .list .classification {
+	margin-top: 10px;
 	float: left;
 }
-#body .list {
-	position: relative;
-	width: 100%;
-	height: 124px;
-	border-bottom: 1px dashed #e7eaec;
-	padding-left: 15px;
-	padding-top:20px ;
-}
+
 #body .list .time {
-	position: relative;
-	left: 30px;
+	margin-top: 10px;
+	left: 20px;
+}
+
+#body .list .introduce {
+	margin-top: 20px;
 }
