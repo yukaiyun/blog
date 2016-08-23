@@ -1,0 +1,150 @@
+body,
+html {
+	padding: 0;
+	margin: 0;
+	background-color: #f3f3f3;
+	font-family: "微软雅黑"
+}
+
+h3 {
+	font-weight: 100;
+}
+
+h2 {
+	color: #585f69;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+
+#head {
+	width: 100%;
+	height: 70px;
+	float: left;
+	position: fixed;
+	background-color: #ffffff;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+#head .my {
+	float: left;
+}
+
+#head .my .img,
+#head .my .img img {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	float: left;
+	border-radius: 100px;
+}
+
+#head .my .img img {
+	top: 10px;
+	left: 10px;
+}
+
+#head .my .name {
+	position: relative;
+	float: left;
+	left: 20px;
+}
+
+#head .classification .list .blog h3 {
+	color: #f60;
+}
+
+#head .classification {
+	float: right;
+	position: relative;
+	right: 10px;
+}
+
+#head .classification .list {
+	float: left;
+	margin: 0 10px
+}
+
+#left {
+	border: 1px solid #e7e7e7;
+	position: fixed;
+	background-color: white;
+	width: 15%;
+	height: 800px;
+	top: 100px;
+	left: 15px;
+}
+
+#left .head {
+	text-align: center;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+#left .text-list {
+	position: relative;
+	left: 20px;
+	top: 10px;
+	width: 100%;
+	height: 50px;
+}
+
+#left .text-list .img img {
+	position: relative;
+	top: 12px;
+	width: 25px;
+	height: 25px;
+}
+
+#left .text-list h3 {
+	position: relative;
+	top: 12px;
+	left: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+#left .text-list .img,
+#left .text-list .text {
+	float: left;
+}
+
+#body {
+	border: 1px solid #e7e7e7;
+	position: fixed;
+	background-color: white;
+	width: 65%;
+	top: 100px;
+	left: 17%;
+}
+
+#body .head {
+	width: 100%;
+	height: 46px;
+	border-bottom: 1px solid #E7E7E7;
+}
+
+#body .head .date h3 {
+	position: relative;
+	left: 20px;
+	font-size: 16px;
+}
+#body .list h3{
+	color: #777;
+	font-size: 15px;
+}
+#body .list .classification{
+	float: left;
+}
+#body .list {
+	position: relative;
+	width: 100%;
+	height: 124px;
+	border-bottom: 1px dashed #e7eaec;
+	padding-left: 15px;
+	padding-top:20px ;
+}
+#body .list .time {
+	position: relative;
+	left: 30px;
+}
